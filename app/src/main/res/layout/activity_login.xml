@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:backgroundTint="@color/colorPrimaryDark">
+    android:background="@color/introcolor">
 
     <Button
         android:id="@+id/tempButton"
@@ -15,7 +15,7 @@
     <TextView
         android:text="Charald"
         android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/titlecolor"
         android:typeface="serif"
         android:textSize="50sp"
         android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
     <TextView
         android:text="The Bluetooth Chat App"
         android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/titlecolor"
         android:textSize="28sp"
         android:typeface="serif"
         android:layout_width="wrap_content"
