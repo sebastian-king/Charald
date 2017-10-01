@@ -180,7 +180,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbe-Fc-qqu">
                                 <rect key="frame" x="131" y="192" width="114" height="21"/>
@@ -223,6 +223,16 @@
                                 <color key="textColor" red="1" green="0.1805051352" blue="0.231630525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4P-nd-ZcU">
+                                <rect key="frame" x="163" y="400" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleColor" red="0.15692639780000001" green="0.8044227638" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="EEM-r0-rmH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -290,10 +300,35 @@
                         <outlet property="email" destination="GIq-CP-bRn" id="unH-pF-yg8"/>
                         <outlet property="password" destination="cik-fY-TaX" id="2B9-My-rdd"/>
                         <outlet property="status_label" destination="9oS-wA-JGw" id="M1y-Ff-KOw"/>
+                        <segue destination="nxd-OD-UTV" kind="show" identifier="authSegue" id="RRG-3Z-BDz"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="444" y="109.29535232383809"/>
+            <point key="canvasLocation" x="393" y="110"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="I0Y-Tb-kPe">
+            <objects>
+                <viewController id="nxd-OD-UTV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x7q-63-UvE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmy-ny-xtz">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="RG2-Bn-7eP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CCk-dw-3ZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1127" y="85"/>
         </scene>
     </scenes>
     <resources>
