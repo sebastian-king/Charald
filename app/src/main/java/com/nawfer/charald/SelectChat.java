@@ -23,21 +23,14 @@ public class SelectChat extends AppCompatActivity {
     private final static int REQUEST_ENABLE_BT = 1; //Request number for turning on bluetooth at the start
     private BluetoothAdapter btAdapter;                     //Checks for bluetooth on/off/null
     private Set<BluetoothDevice> pairedDevices;             //Set of devices already paired - unmodifiable except by Android itself
-    //private BroadcastReceiver receiver;                     //Will receive info over bluetooth, created after devices found
+    //private BroadcastReceiver receiver;                    //Will receive info over bluetooth, created after devices found
 
     /*
     This view will be where bluetooth devices are scanned and chosen to
     chat with.
      */
 
-    //Create BroadcastReceiver for ACTION_FOUND
-    //NOTE: Lambda will not work, don't try again
-    BroadcastReceiver receiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            Toast.makeText(SelectChat.this, "Device Detected!", Toast.LENGTH_SHORT).show();
-        }
-    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -100,12 +93,22 @@ public class SelectChat extends AppCompatActivity {
                 }
             }
 
+            //2. Discover Devices
             btAdapter.startDiscovery();
             IntentFilter filterIntent = new IntentFilter(BluetoothDevice.ACTION_FOUND);
             registerReceiver(receiver, filterIntent);
         });
 
     }
+
+    //Create BroadcastReceiver for ACTION_FOUND
+    //NOTE: Lambda will not work, don't try again
+    BroadcastReceiver receiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Toast.makeText(SelectChat.this, "Device Detected!", Toast.LENGTH_SHORT).show();
+        }
+    };
 
     protected void onResume()
     {
