@@ -23,7 +23,7 @@ public class SelectChat extends AppCompatActivity {
     private final static int REQUEST_ENABLE_BT = 1; //Request number for turning on bluetooth at the start
     private BluetoothAdapter btAdapter;                     //Checks for bluetooth on/off/null
     private Set<BluetoothDevice> pairedDevices;             //Set of devices already paired - unmodifiable except by Android itself
-    private BroadcastReceiver receiver;                     //Will receive info over bluetooth, created after devices found
+    //private BroadcastReceiver receiver;                     //Will receive info over bluetooth, created after devices found
 
     /*
     This view will be where bluetooth devices are scanned and chosen to
