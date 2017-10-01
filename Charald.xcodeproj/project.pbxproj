@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1916CD4A1F80D2C900095A7B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1916CD491F80D2C800095A7B /* Media.xcassets */; };
 		199112721F80C52F001AC995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199112711F80C52F001AC995 /* AppDelegate.swift */; };
 		199112741F80C52F001AC995 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199112731F80C52F001AC995 /* ViewController.swift */; };
 		199112771F80C52F001AC995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 199112751F80C52F001AC995 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1916CD491F80D2C800095A7B /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		1991126E1F80C52F001AC995 /* Charald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Charald.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		199112711F80C52F001AC995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		199112731F80C52F001AC995 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				199112781F80C52F001AC995 /* Assets.xcassets */,
 				1991127A1F80C52F001AC995 /* LaunchScreen.storyboard */,
 				1991127D1F80C52F001AC995 /* Info.plist */,
+				1916CD491F80D2C800095A7B /* Media.xcassets */,
 			);
 			path = Charald;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1916CD4A1F80D2C900095A7B /* Media.xcassets in Resources */,
 				1991127C1F80C52F001AC995 /* LaunchScreen.storyboard in Resources */,
 				199112791F80C52F001AC995 /* Assets.xcassets in Resources */,
 				199112771F80C52F001AC995 /* Main.storyboard in Resources */,
@@ -429,6 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y6UTX5WN7;
 				INFOPLIST_FILE = Charald/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = charald.Charald;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y6UTX5WN7;
 				INFOPLIST_FILE = Charald/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = charald.Charald;
 				PRODUCT_NAME = "$(TARGET_NAME)";
