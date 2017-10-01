@@ -1,0 +1,12 @@
+#register_submit_btn {
+	cursor: pointer;
+}
+fieldset:disabled #register_submit_btn {
+	cursor: not-allowed;
+}
+#login_submit_btn {
+	cursor: pointer;
+}
+fieldset:disabled #login_submit_btn {
+	cursor: not-allowed;
+}

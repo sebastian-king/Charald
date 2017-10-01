@@ -1,0 +1,10 @@
+array(4) {
+  ["name"]=>
+  string(3) "Seb"
+  ["phone"]=>
+  string(10) "8176584570"
+  ["email"]=>
+  string(22) "postmaster@charald.com"
+  ["message"]=>
+  string(5) "hi hi"
+}
