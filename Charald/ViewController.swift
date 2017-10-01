@@ -57,7 +57,7 @@ class ViewController: UIViewController {
                 let id = Int(id_string)
                 print(id!)
                 if (id! > 0) {
-                    self.status_label.text = "Hello" + String(describing: dict?["name"] ?? "nil"
+                    self.status_label.text = "Hello" + String(describing: dict?["name"] ?? "nil")       
                 } else if (id! == -1) {
                     self.status_label.text = "You must enter a username"
                 } else if (id! == -2) {
