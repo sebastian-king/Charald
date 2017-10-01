@@ -1,0 +1,6 @@
+# on debain
+
+touch ../messages
+chmod a+r messages
+chmod u-z messages
+chown www-data:www-data .././ -R
