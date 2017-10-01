@@ -30,6 +30,15 @@ public class SelectChat extends AppCompatActivity {
     chat with.
      */
 
+    //Create BroadcastReceiver for ACTION_FOUND
+    //NOTE: Lambda will not work, don't try again
+    BroadcastReceiver receiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Toast.makeText(SelectChat.this, "Device Detected!", Toast.LENGTH_SHORT).show();
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -91,20 +100,9 @@ public class SelectChat extends AppCompatActivity {
                 }
             }
 
+            btAdapter.startDiscovery();
             IntentFilter filterIntent = new IntentFilter(BluetoothDevice.ACTION_FOUND);
             registerReceiver(receiver, filterIntent);
-
-            //Create BroadcastReceiver for ACTION_FOUND
-            //NOTE: Lambda will not work, don't try again
-            BroadcastReceiver receiver = new BroadcastReceiver() {
-                @Override
-                public void onReceive(Context context, Intent intent) {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(SelectChat.this);
-                    builder.setMessage("Device found!");
-                    AlertDialog deviceFoundDialog = builder.create();
-                    deviceFoundDialog.show();
-                }
-            };
         });
 
     }
