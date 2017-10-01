@@ -15,6 +15,8 @@ public class LoginActivity extends AppCompatActivity {
     Button loginButton;
     Button registerButton;
     WebView webView;
+    Button tempButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,13 @@ public class LoginActivity extends AppCompatActivity {
 
         registerButton = (Button)findViewById(R.id.registerButton);
         loginButton = (Button)findViewById(R.id.loginButton);
+        tempButton = (Button)findViewById(R.id.tempButton);
+
+        tempButton.setOnClickListener((view) ->
+        {
+            Intent intent = new Intent(this, SelectChat.class);
+            startActivity(intent);
+        });
 
         registerButton.setOnClickListener((view) -> {
             /*
