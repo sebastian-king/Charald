@@ -1,4 +1,4 @@
-# Charald
+# Charry/Charald
 A chat application that uses both internet and local bluetooth
 
 iOS App - [https://github.com/sebastian-king/Charry/tree/ios](https://github.com/sebastian-king/Charald/tree/ios)
