@@ -8,3 +8,5 @@ Android App - [https://github.com/sebastian-king/Charry/tree/android](https://gi
 Web server - [https://github.com/sebastian-king/Charry/tree/web](https://github.com/sebastian-king/Charald/tree/web)
 
 also on https://www.charald.com and https://www.charald.tech
+
+*HackUTA 2017 project*
